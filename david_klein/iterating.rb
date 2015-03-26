@@ -69,16 +69,11 @@ blog_posts = [
 # store each of the unique tags of all the `blog_posts` inside a variable
 # called `tags`.
 
-require 'pry'
-
-
 # tags = blog_posts.map do |post|
 #   post[:tags]
 # end.flatten.uniq
 
 tags = blog_posts.map { |post| post[:tags] }.flatten.uniq
-
-binding.pry
 
 # There shouldn't be any need to edit anything below this line
 
